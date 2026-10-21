@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    background: #f6f4ee;
+    color: #222;
+}
+
+.page-head {
+    background: #174f46;
+    color: white;
+}
+
+.head-wrap {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px 0 8px;
+}
+
+.head-wrap h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.head-wrap p {
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+.menu {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+    padding: 10px 0 17px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.intro-area {
+    min-height: 310px;
+    background: #d8eadf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.intro-text h2 {
+    color: #174f46;
+    font-size: 34px;
+    margin: 0 0 15px;
+}
+
+.intro-text p {
+    max-width: 650px;
+    margin: 0 auto 24px;
+    line-height: 1.7;
+}
+
+.start-link,
+.apply-link,
+button {
+    display: inline-block;
+    border: 0;
+    background: #1e7464;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.start-link:hover,
+.apply-link:hover,
+button:hover {
+    background: #15594d;
+}
+
+.page-content {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+    padding: 38px 0;
+}
+
+.main-heading {
+    text-align: center;
+    color: #24433e;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.home-services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: 290px;
+    background: white;
+    padding: 23px;
+    border: 1px solid #ddd8ce;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3,
+.service-item h3 {
+    color: #1e7464;
+    margin-top: 0;
+}
+
+.info-card p,
+.service-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.service-item {
+    background: white;
+    padding: 24px;
+    border-top: 4px solid #ca9b4a;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.services-area {
+    min-height: 620px;
+}
+
+.application-area {
+    max-width: 820px;
+}
+
+.application-form {
+    background: white;
+    padding: 28px;
+    border: 1px solid #ddd8ce;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.application-form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.application-form textarea {
+    resize: vertical;
+}
+
+.form-actions,
+.result-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.reset-button {
+    background: #777;
+}
+
+.reset-button:hover {
+    background: #555;
+}
+
+.help-button {
+    background: #b77b1d;
+}
+
+.help-button:hover {
+    background: #925f12;
+}
+
+.ok-note {
+    background: #d9efe3;
+    color: #155d45;
+    border: 1px solid #a8d4bb;
+    padding: 14px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.problem-box {
+    background: #fbe1df;
+    color: #8e2f29;
+    border: 1px solid #efb6b0;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+}
+
+.problem-box p {
+    margin: 6px 0;
+}
+
+.application-result {
+    background: white;
+    padding: 27px;
+    border-left: 5px solid #ca9b4a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.application-result h2 {
+    color: #174f46;
+}
+
+.application-result p {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.help-screen {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.help-card {
+    background: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 27px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.help-card h3 {
+    color: #174f46;
+}
+
+.page-footer {
+    background: #174f46;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+@media (max-width: 720px) {
+    .service-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-text h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 520px) {
+    .head-wrap h1 {
+        font-size: 21px;
+    }
+
+    .menu a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .intro-area {
+        min-height: 250px;
+    }
+
+    .intro-text h2 {
+        font-size: 24px;
+    }
+
+    .application-form {
+        padding: 20px;
+    }
+}
+
+@media print {
+    .page-head,
+    .page-footer,
+    .ok-note,
+    .result-actions {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .application-result {
+        box-shadow: none;
+        border: 1px solid #bbb;
+    }
+}

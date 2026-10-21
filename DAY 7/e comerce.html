@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electrical Item Sale</title>
+</head>
+<body>
+
+<script>
+    // Function to calculate the total price
+    function calculateTotal(price, quantity) {
+        return price * quantity;
+    }
+
+    // Price of each electrical item
+    let price = 500;
+
+    // Get quantity from the seller
+    let quantity = parseInt(prompt("Enter the quantity of electrical items sold:"));
+
+    // Calculate total price
+    let totalPrice = calculateTotal(price, quantity);
+
+    // Display the result
+    document.write("The price of each electrical item is $" + price + ".<br>");
+    document.write("Total price for " + quantity + " items is $" + totalPrice + ".");
+</script>
+
+</body>
+</html>

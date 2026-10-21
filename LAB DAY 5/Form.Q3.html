@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+
+<h2>Job Application Form</h2>
+
+<form onsubmit="return validateForm()">
+
+Full Name:<br>
+<input type="text" id="name">
+<p id="nameError"></p>
+
+Email Address:<br>
+<input type="text" id="email">
+<p id="emailError"></p>
+
+Age:<br>
+<input type="number" id="age">
+<p id="ageError"></p>
+
+Phone Number:<br>
+<input type="text" id="phone">
+<p id="phoneError"></p>
+
+Gender:<br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<p id="genderError"></p>
+
+Job Position:<br>
+<select id="job">
+    <option value="">Select</option>
+    <option>Software Engineer</option>
+    <option>Web Developer</option>
+    <option>QA Engineer</option>
+</select>
+<p id="jobError"></p>
+
+Years of Experience:<br>
+<input type="number" id="experience">
+<p id="experienceError"></p>
+
+Upload Resume:<br>
+<input type="file" id="resume">
+<p id="resumeError"></p>
+
+Skills:<br>
+<input type="checkbox" name="skill" value="HTML">HTML
+<input type="checkbox" name="skill" value="CSS">CSS
+<input type="checkbox" name="skill" value="JavaScript">JavaScript
+<p id="skillError"></p>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<h3 id="success"></h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>

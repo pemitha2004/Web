@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Help Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-head">
+        <div class="head-wrap">
+            <h1>Citizen Help Portal</h1>
+            <p>Simple Online Government Services</p>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="apply.php">Application</a>
+        </nav>
+    </header>
+
+    <section class="intro-area">
+        <div class="intro-text">
+            <h2>Government Services Made Easier</h2>
+            <p>Find basic public services and submit an application from one place.</p>
+            <a href="services.html" class="start-link">View Services</a>
+        </div>
+    </section>
+
+    <main class="page-content">
+        <h2 class="main-heading">Popular Services</h2>
+        <div class="home-services">
+            <article class="info-card">
+                <h3>Birth Certificate</h3>
+                <p>Request a new copy of a birth certificate.</p>
+                <button onclick="showNotice('Birth Certificate')">More Info</button>
+            </article>
+
+            <article class="info-card">
+                <h3>Identity Card</h3>
+                <p>View information about national identity card services.</p>
+                <button onclick="showNotice('National Identity Card')">More Info</button>
+            </article>
+
+            <article class="info-card">
+                <h3>Driving Licence</h3>
+                <p>Get details about driving licence applications.</p>
+                <button onclick="showNotice('Driving Licence')">More Info</button>
+            </article>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <p>2026 Citizen Help Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

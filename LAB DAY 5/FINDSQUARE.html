@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<h2>Find Square</h2>
+
+<p id="demo"></p>
+
+<script>
+function findSquare(num) {
+    return num * num;
+}
+
+let number = prompt("Enter a number:");
+let answer = findSquare(number);
+
+document.getElementById("demo").innerHTML =
+"The square is: " + answer;
+</script>
+
+</body>
+</html>
